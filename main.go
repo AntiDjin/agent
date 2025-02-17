@@ -19,7 +19,7 @@ func main() {
 		log.Panic(err)
 	}
 
-	bot, err := tgbotapi.NewBotAPI("7048189548:AAGAUjmwGG9qqMHSqTezVCs5xTwIPvvfbJM")
+	bot, err := tgbotapi.NewBotAPI("Тут должен быть токен")
 	if err != nil {
 		log.Panic(err)
 	}
