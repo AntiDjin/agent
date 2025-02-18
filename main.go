@@ -53,7 +53,7 @@ func main() {
 				}
 				_, err := db.Exec("UPDATE users SET city = $1 WHERE id = $2", update.Message.Text, update.Message.From.ID)
 				if err != nil {
-					log.Println("возникла ошибка про обновлении города", err)
+					log.Println("Возникла ошибка про обновлении города", err)
 				}
 				msg := tgbotapi.NewMessage(update.Message.From.ID, "Ваш город сохранен!")
 				bot.Send(msg)
